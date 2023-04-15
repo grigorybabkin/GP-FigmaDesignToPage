@@ -1,0 +1,141 @@
+@import "../../styles/variables.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $navbar-height;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: $bg-default;
+  border-bottom: 1px solid $bg-border;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $typo-primary;
+  }
+
+  &__brand {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__menu {
+    padding: 0;
+    margin-right: auto;
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+    line-height: $navbar-height;
+    gap: 32px;
+
+
+    a {
+      color: $typo-secondary;
+      inline-size: max-content;
+    }
+  }
+
+  &__item {
+    &__active {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-bottom: 2px solid $control-secondary-bg-border;
+      }
+
+      a {
+        color: $typo-primary;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+
+  .info_panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__controls {
+      margin-right: 16px;
+      min-width: 112px;
+
+      &:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      button {
+        height: 32px;
+        width: 32px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        float: left;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__profile {
+      display: inline-flex;
+      align-items: center;
+      inline-size: max-content;
+
+      &__pic_frame {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__pic {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+      }
+
+      &__name {
+        margin-left: 8px;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+
+
+

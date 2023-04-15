@@ -1,0 +1,68 @@
+@import "./variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-default:   #{$bg-default};
+  --bg-secondary: #{$bg-secondary};
+  --bg-success:   #{$bg-success};
+  --bg-stripe:    #{$bg-stripe};
+  --bg-ghost:     #{$bg-ghost};
+
+  --bg-border: #{$bg-border};
+
+  --control-primary-bg: #{$control-primary-bg};
+  --control-primary-typo: #{$control-primary-typo};
+  --control-default-typo: #{$control-default-typo};
+  --control-secondary-typo: #{$control-secondary-typo};
+  --control-secondary-bg-border: #{$control-secondary-bg-border};
+
+  --control-clear-typo: #{$control-clear-typo};
+  --typo-primary: #{$typo-primary};
+  --typo-secondary: #{$typo-secondary};
+
+  --control-ghost-bg: #{$control-ghost-bg};
+  --control-ghost-typo: #{$control-ghost-typo};
+
+  --btn-height: $btn-height;
+  --btn-ghost-height: $btn-ghost-height;
+  --navbar-height: $navbar-height;
+}
+
+body {
+  font-family: "Segoe UI", Arial, ui-serif;
+  font-style: normal;
+  color: $typo-primary;
+  background: $bg-secondary;
+
+  min-width: 750px;
+
+  main {
+    max-width: 1440px+24px+24px;
+    padding: $navbar-height+24px 0+24px 24px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  button {
+    cursor: pointer;
+    white-space: nowrap;
+    border: 0;
+    border-radius: 4px;
+  }
+}
+
+

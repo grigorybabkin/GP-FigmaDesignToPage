@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.btn {
+  &__primary {
+    background: $control-primary-bg;
+    color: $control-primary-typo;
+    height: $btn-height;
+    line-height: $btn-height;
+    font-size: 16px;
+    padding: 0 20px;
+
+    &__outline {
+      @extend .btn__primary;
+      border: 1px solid $control-secondary-bg-border;
+      background: $bg-default;
+      color: $control-secondary-typo;
+    }
+  }
+
+  &__ghost {
+    padding: 0 16px;
+    height: $btn-ghost-height;
+    line-height: $btn-ghost-height;
+    font-size: 14px;
+    background: $control-ghost-bg;
+    color: $control-ghost-typo;
+  }
+
+  &__control_circular {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $control-ghost-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+

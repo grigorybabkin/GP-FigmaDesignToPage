@@ -1,0 +1,1 @@
+export { TopicCatalog } from './TopicCatalog'

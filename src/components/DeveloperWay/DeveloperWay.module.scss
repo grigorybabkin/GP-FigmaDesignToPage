@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+@import "../../styles/button.scss";
+
+.dev_way {
+  padding: 32px;
+  margin: 24px 0;
+  height: 384px;
+  position: relative;
+  background: $bg-stripe;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &__control_panel {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    &__header {
+    }
+
+    .slider_control_group {
+      margin-left: 32px;
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .btn_hide {
+      margin-left: 32px;
+      margin-right: auto;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    position: absolute;
+    height: 260px;
+
+    &__card {
+      margin-right: 24px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

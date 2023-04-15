@@ -1,0 +1,60 @@
+.btn__primary, .btn__primary__outline {
+  background: #0078d2;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 20px; }
+  .btn__primary__outline {
+    border: 1px solid #0078d2;
+    background: white;
+    color: #0078d2; }
+.btn__ghost {
+  padding: 0 16px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  background: rgba(0, 66, 105, 0.07);
+  color: rgba(0, 57, 92, 0.8); }
+.btn__control_circular {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 66, 105, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.dev_way {
+  padding: 32px;
+  margin: 24px 0;
+  height: 384px;
+  position: relative;
+  background: rgba(0, 32, 51, 0.05);
+  border-radius: 8px;
+  overflow: hidden; }
+  .dev_way__control_panel {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between; }
+    .dev_way__control_panel .slider_control_group {
+      margin-left: 32px;
+      display: flex;
+      justify-content: center; }
+      .dev_way__control_panel .slider_control_group button {
+        margin-right: 8px; }
+        .dev_way__control_panel .slider_control_group button:last-child {
+          margin-right: 0; }
+    .dev_way__control_panel .btn_hide {
+      margin-left: 32px;
+      margin-right: auto; }
+  .dev_way__slider {
+    display: flex;
+    position: absolute;
+    height: 260px; }
+    .dev_way__slider__card {
+      margin-right: 24px; }
+      .dev_way__slider__card:last-child {
+        margin: 0; }
+
+/*# sourceMappingURL=DeveloperWay.module.css.map */

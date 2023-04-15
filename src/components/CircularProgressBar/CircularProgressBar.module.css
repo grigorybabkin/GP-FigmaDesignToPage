@@ -1,0 +1,44 @@
+.container {
+  min-width: 24px;
+  width: 100%;
+  display: inline-block;
+  position: relative; }
+  .container::after {
+    padding-top: 100%;
+    /* 1:1 ratio */
+    display: block;
+    content: ''; }
+
+.circular_progress {
+  --progress_center: visible;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+  background: conic-gradient(#24c38e 3.6deg, rgba(0, 32, 51, 0.08) 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .circular_progress::before {
+    visibility: var(--progress_center);
+    content: "";
+    height: 80%;
+    width: 80%;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    background-color: white; }
+  .circular_progress svg {
+    height: 80%;
+    width: 80%;
+    fill: #24c38e; }
+
+.progress_value {
+  position: absolute;
+  text-align: center; }
+  .progress_value__text {
+    color: rgba(0, 32, 51, 0.6); }
+
+/*# sourceMappingURL=CircularProgressBar.module.css.map */

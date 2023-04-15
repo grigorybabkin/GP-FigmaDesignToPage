@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+@import "../../styles/button.scss";
+
+.topic {
+  &__info_card {
+    width: 100%;
+    min-height: 248px;
+    background: $bg-default;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 32, 51, 0.02), 0 2px 8px rgba(0, 32, 51, 0.16);
+    display: flex;
+    padding: 32px 49px;
+  }
+
+  &__progress_info {
+    min-width: 248px - ((32px+9px) *2);
+    height: 100%;
+    margin: auto 49px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__main_info {
+    position: relative;
+    margin: 0 49px;
+    width: 100%;
+    padding-bottom: $btn-height;
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__tags {
+      margin-bottom: 8px;
+      color: $typo-secondary;
+      ul {
+        font-size: 14px;
+        line-height: 150%;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        &::before {
+          content: '\2022';
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+        &:first-child::before {
+          content: '';
+          margin: 0;
+        }
+      }
+    }
+
+    &__content {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    &__btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+

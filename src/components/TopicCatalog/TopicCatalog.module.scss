@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+@import "../../styles/button.scss";
+
+.topic_catalog {
+  &__header {
+    margin: 24px 0 16px 0;
+  }
+
+  &__category {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    border: 1px solid $bg-border;
+    border-radius: 4px;
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 24px;
+
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    button {
+      position: relative;
+      height: 38px;
+      background: transparent;
+      border: none;
+      border-radius: 3px;
+      padding: 0 20px 0 20px;
+      margin-left: 1px;
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &.active {
+        background: $control-ghost-bg;
+      }
+
+      &::after {
+        position: absolute;
+        right: -1px;
+        content: "";
+        width: 0;
+        height: 26px;
+        border-right: 1px solid $bg-border;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  &__grid_view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+
+    @media (max-width: 1490px) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

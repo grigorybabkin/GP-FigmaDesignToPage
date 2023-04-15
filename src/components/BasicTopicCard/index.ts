@@ -1,0 +1,1 @@
+export { BasicTopicCard } from './BasicTopicCard'

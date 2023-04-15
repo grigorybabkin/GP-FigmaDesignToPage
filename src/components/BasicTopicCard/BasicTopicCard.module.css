@@ -1,0 +1,90 @@
+.btn__primary, .btn__primary__outline {
+  background: #0078d2;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 20px; }
+  .btn__primary__outline {
+    border: 1px solid #0078d2;
+    background: white;
+    color: #0078d2; }
+.btn__ghost {
+  padding: 0 16px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  background: rgba(0, 66, 105, 0.07);
+  color: rgba(0, 57, 92, 0.8); }
+.btn__control_circular {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 66, 105, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.basic_card {
+  padding: 32px;
+  width: 464px;
+  height: 260px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16); }
+  .basic_card__container {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 40px; }
+  .basic_card__title {
+    margin-bottom: 8px; }
+  .basic_card__tags {
+    margin-bottom: 11px;
+    color: rgba(0, 32, 51, 0.6); }
+    .basic_card__tags ul {
+      font-size: 14px;
+      line-height: 150%;
+      padding: 0; }
+    .basic_card__tags li {
+      display: inline-block; }
+      .basic_card__tags li::before {
+        content: '\2022';
+        margin-left: 8px;
+        margin-right: 8px; }
+      .basic_card__tags li:first-child::before {
+        content: '';
+        margin: 0; }
+  .basic_card__content {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 150%; }
+  .basic_card__btn_n_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .basic_card__icon_btn {
+    padding-left: 15px; }
+    .basic_card__icon_btn div {
+      height: 16px;
+      width: 16px;
+      display: inline-flex;
+      justify-content: center;
+      align-content: center;
+      margin-right: 15px; }
+  .basic_card__progress {
+    display: flex;
+    align-items: center;
+    align-content: center; }
+    .basic_card__progress__text {
+      color: rgba(0, 32, 51, 0.6);
+      margin-left: 6px; }
+    .basic_card__progress__bar {
+      margin-left: 8px;
+      width: 24px; }
+
+/*# sourceMappingURL=BasicTopicCard.module.css.map */

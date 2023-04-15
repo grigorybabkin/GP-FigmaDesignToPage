@@ -1,0 +1,51 @@
+.btn__primary, .btn__primary__outline {
+  background: #0078d2;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 20px; }
+  .btn__primary__outline {
+    border: 1px solid #0078d2;
+    background: white;
+    color: #0078d2; }
+.btn__ghost {
+  padding: 0 16px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  background: rgba(0, 66, 105, 0.07);
+  color: rgba(0, 57, 92, 0.8); }
+.btn__control_circular {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 66, 105, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.recommended_topics__header {
+  margin: 24px 0; }
+.recommended_topics__more {
+  margin: 24px 0 16px 0;
+  display: flex;
+  justify-content: center; }
+  .recommended_topics__more hr {
+    width: 100%;
+    border: 1px solid rgba(0, 65, 102, 0.2);
+    height: 1px;
+    margin-top: auto;
+    margin-bottom: auto; }
+  .recommended_topics__more button {
+    margin: 0 14px;
+    padding: 0 12px 0 16px; }
+    .recommended_topics__more button div {
+      display: inline-flex;
+      height: 12px;
+      width: 12px;
+      justify-content: center;
+      align-content: center;
+      margin-left: 11px; }
+
+/*# sourceMappingURL=RecommendedTopics.module.css.map */

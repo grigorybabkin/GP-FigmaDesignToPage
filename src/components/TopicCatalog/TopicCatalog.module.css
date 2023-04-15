@@ -1,0 +1,79 @@
+.btn__primary, .btn__primary__outline {
+  background: #0078d2;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 20px; }
+  .btn__primary__outline {
+    border: 1px solid #0078d2;
+    background: white;
+    color: #0078d2; }
+.btn__ghost {
+  padding: 0 16px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  background: rgba(0, 66, 105, 0.07);
+  color: rgba(0, 57, 92, 0.8); }
+.btn__control_circular {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 66, 105, 0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.topic_catalog__header {
+  margin: 24px 0 16px 0; }
+.topic_catalog__category {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  border: 1px solid rgba(0, 65, 102, 0.2);
+  border-radius: 4px;
+  display: inline-flex;
+  position: relative;
+  margin-bottom: 24px; }
+  .topic_catalog__category:after {
+    content: "";
+    clear: both;
+    display: table; }
+  .topic_catalog__category button {
+    position: relative;
+    height: 38px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    padding: 0 20px 0 20px;
+    margin-left: 1px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .topic_catalog__category button.active {
+      background: rgba(0, 66, 105, 0.07); }
+    .topic_catalog__category button::after {
+      position: absolute;
+      right: -1px;
+      content: "";
+      width: 0;
+      height: 26px;
+      border-right: 1px solid rgba(0, 65, 102, 0.2); }
+    .topic_catalog__category button:first-child {
+      margin-left: 0; }
+    .topic_catalog__category button:last-child::after {
+      display: none; }
+.topic_catalog__grid_view {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px; }
+  @media (max-width: 1490px) {
+    .topic_catalog__grid_view {
+      grid-template-columns: 1fr 2fr; } }
+  @media (max-width: 1000px) {
+    .topic_catalog__grid_view {
+      grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=TopicCatalog.module.css.map */
